@@ -56,7 +56,7 @@ class BigInteger:
         res = BigInteger(str(self))
         A = BigInteger(str(self))
         P = BigInteger(str(other)[1:]) if str(other)[0] == "-" else BigInteger(str(other))
-        while P > BigInteger():
+        while P > BigInteger(1):
             P = P - BigInteger(1)
             res = res * A
         return res
